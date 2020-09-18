@@ -11,6 +11,7 @@ void test_subtract(void);
 void test_multiply(void);
 void test_divide(void);
 void test_greater(void);
+void test_primenum(void);
 
 /* Start of the application test */
 int main() {
@@ -28,6 +29,7 @@ int main() {
   CU_add_test(suite, "multiply", test_multiply);
   CU_add_test(suite, "divide", test_divide);
   CU_add_test(suite, "greater", test_greater);
+  CU_add_test(suite, "primenum", test_primenum);
 
 
 
@@ -79,3 +81,14 @@ void test_greater(void) {
   /* Dummy fail*/
   CU_ASSERT(30 == divide(30, 40));
 }
+
+void test_primenum(void)
+{
+   CU_ASSERT(1 == primenum(7));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == primenum(30));
+}
+  
+
+
