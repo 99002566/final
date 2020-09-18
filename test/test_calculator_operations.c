@@ -17,6 +17,10 @@ void test_evenodd(void);
 void test_evenodd1(void);
 void test_posneg(void);
 void test_posneg1(void);
+void test_factorial(void);
+void test_factorial1(void);
+void test_squarearea(void);
+void test_squareperi(void);
 
 /* Start of the application test */
 int main() {
@@ -40,6 +44,10 @@ int main() {
    CU_add_test(suite, "evenodd1", test_evenodd1);
    CU_add_test(suite, "posneg", test_posneg);
   CU_add_test(suite, "posneg1", test_posneg1);
+  CU_add_test(suite, "factorial", test_factorial);
+   CU_add_test(suite, "factorial1", test_factorial1);
+   CU_add_test(suite, "squarearea", test_squarearea);
+   CU_add_test(suite, "squareperi", test_squareperi);
 
 
 /* Note: Do not edit START*/
@@ -137,6 +145,37 @@ void test_posneg1(void)
   
   /* Dummy fail*/
   CU_ASSERT(1 == posneg1(-5));
+}
+
+void test_factorial(void)
+{
+   CU_ASSERT(120 == factorial(5));
+  
+  /* Dummy fail*/
+  CU_ASSERT(110 == factorial(5));
+}
+
+void test_factorial1(void)
+{
+   CU_ASSERT(120 == factorial1(5));
+  
+  /* Dummy fail*/
+  CU_ASSERT(110 == factorial1(5));
+}
+
+void test_squarearea(void)
+{
+   CU_ASSERT(25 == squarearea(5));
+  
+  /* Dummy fail*/
+  CU_ASSERT(11 == squarearea(5));
+}
+void test_squareperi(void)
+{
+   CU_ASSERT(20 == squareperi(5));
+  
+  /* Dummy fail*/
+  CU_ASSERT(11 == squareperi(5));
 }
 
 
