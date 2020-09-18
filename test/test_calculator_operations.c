@@ -21,6 +21,10 @@ void test_factorial(void);
 void test_factorial1(void);
 void test_squarearea(void);
 void test_squareperi(void);
+void test_square(void);
+void test_square1(void);
+void test_cube(void);
+void test_cube1(void);
 
 /* Start of the application test */
 int main() {
@@ -48,6 +52,11 @@ int main() {
    CU_add_test(suite, "factorial1", test_factorial1);
    CU_add_test(suite, "squarearea", test_squarearea);
    CU_add_test(suite, "squareperi", test_squareperi);
+   CU_add_test(suite, "square", test_square);
+   CU_add_test(suite, "square1", test_square1);
+   CU_add_test(suite, "cube", test_cube);
+  CU_add_test(suite, "cube1", test_cube1);
+
 
 
 /* Note: Do not edit START*/
@@ -176,6 +185,34 @@ void test_squareperi(void)
   
   /* Dummy fail*/
   CU_ASSERT(11 == squareperi(5));
+}
+void test_square(void)
+{
+   CU_ASSERT(25 == square(5));
+  
+  /* Dummy fail*/
+  CU_ASSERT(11 == square(5));
+}
+void test_square1(void)
+{
+   CU_ASSERT(25 == square1(5));
+  
+  /* Dummy fail*/
+  CU_ASSERT(11 == square1(5));
+}
+void test_cube(void)
+{
+   CU_ASSERT(125 == cube(5));
+  
+  /* Dummy fail*/
+  CU_ASSERT(11 == cube(5));
+}
+void test_cube1(void)
+{
+   CU_ASSERT(125 == cube1(5));
+  
+  /* Dummy fail*/
+  CU_ASSERT(11 == cube1(5));
 }
 
 
