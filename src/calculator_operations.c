@@ -48,4 +48,29 @@ int primenum(int operand1)
     if(flag==0)    
     return 1;  
 }
-     
+    
+int primenum1(int operand2)
+{
+    int i,m=0,flag=0;    
+      
+    m=operand2/2;    
+    for(i=2;i<=m;i++)    
+    {    
+    if(operand2%i==0)    
+    {    
+    return 0;   
+    flag=1;    
+    break;    
+    }    
+    }    
+    if(flag==0)    
+    return 1;  
+}
+
+int evenodd(int operand1)
+{
+    if(operand1%2==0)
+        return 1;
+    else
+        return 0; 
+}
