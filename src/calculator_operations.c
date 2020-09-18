@@ -114,7 +114,7 @@ return operand1 * factorial(operand1-1);
 
 int factorial1(int operand2)
 {
-   if(operand2r < 0)
+   if(operand2 < 0)
     return -1;
  if(operand2 == 0)
     return 1;
