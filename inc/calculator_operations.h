@@ -57,5 +57,9 @@ int evenodd(int operand1);
 int evenodd1(int operand2);
 int posneg(int operand1);
 int posneg1(int operand2);
+int factorial(int operand1);
+int factorial1(int operand2);
+int squarearea(int operand1);
+int squareperi(int operand1);
 
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
