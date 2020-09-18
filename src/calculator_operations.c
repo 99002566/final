@@ -131,3 +131,21 @@ int squareperi(int operand1)
     return 4*operand1;
 }
 
+int square(int operand1)
+{
+    return operand1*operand1;
+}
+int square1(int operand2)
+{
+    return operand2*operand2;
+}
+int cube(int operand1)
+{
+    return operand1*operand1*operand1;
+}
+int cube1(int operand2)
+{
+    return operand2*operand2*operand2;
+}
+
+
