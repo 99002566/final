@@ -51,5 +51,6 @@ int divide(int operand1, int operand2);
 * @return integer value of the greater operand1 or operand2
 */
 int greater(int operand1, int operand2);
+int primenum(int operand1);
 
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
