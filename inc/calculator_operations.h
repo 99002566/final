@@ -61,5 +61,9 @@ int factorial(int operand1);
 int factorial1(int operand2);
 int squarearea(int operand1);
 int squareperi(int operand1);
+int square(int operand1);
+int square1(int operand2);
+int cube(int operand1);
+int cube1(int operand2);
 
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
