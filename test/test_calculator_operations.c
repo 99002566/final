@@ -12,6 +12,8 @@ void test_multiply(void);
 void test_divide(void);
 void test_greater(void);
 void test_primenum(void);
+void test_primenum1(void);
+void test_evenodd(void);
 
 /* Start of the application test */
 int main() {
@@ -30,6 +32,8 @@ int main() {
   CU_add_test(suite, "divide", test_divide);
   CU_add_test(suite, "greater", test_greater);
   CU_add_test(suite, "primenum", test_primenum);
+  CU_add_test(suite, "primenum1", test_primenum1);
+  CU_add_test(suite, "evenodd", test_evenodd);
 
 
 
@@ -88,6 +92,22 @@ void test_primenum(void)
   
   /* Dummy fail*/
   CU_ASSERT(1 == primenum(30));
+}
+
+void test_primenum1(void)
+{
+   CU_ASSERT(1 == primenum1(7));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == primenum1(30));
+}
+
+void test_evenodd(void)
+{
+   CU_ASSERT(1 == evenodd(6));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == evenodd(5));
 }
   
 
