@@ -12,7 +12,7 @@ int calculator_operand1 = 0;
 int calculator_operand2 = 0;
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, GREATER, PRIMENUM, PRIMENUM1, EXIT };
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, GREATER, PRIMENUM, PRIMENUM1, EVENODD, EVENODD1, POSNEG, POSNEG1, EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 void calculator_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Greater\n6. Primenum\n7. Primenum1\n8. Exit");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Greater\n6. Primenum\n7. Primenum1\n8. Evenodd\n9. Evenodd\n10. Posneg\n11. Posneg1\n12. Exit");
     printf("\n\tEnter your choice\n");
    
      __fpurge(stdin);
@@ -116,13 +116,45 @@ void calculator_menu(void)
             break;
         case PRIMENUM1:
             printf("\n\t Primenum1 %d =%d\nEnter to continue", 
-            calculator_operand1, 
+            calculator_operand2, 
             primenum1(calculator_operand2));
             
             __fpurge(stdin);
             getchar();
             break;
-        case 8:
+          case EVENODD:
+            printf("\n\t evenodd %d =%d\nEnter to continue", 
+            calculator_operand1, 
+            evenodd(calculator_operand1));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+          case EVENODD1:
+            printf("\n\t evenodd1 %d =%d\nEnter to continue", 
+            calculator_operand1, 
+            evenodd1(calculator_operand2));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+          case POSNEG:
+            printf("\n\t posneg %d =%d\nEnter to continue", 
+            calculator_operand1, 
+            posneg(calculator_operand1));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+        case POSNEG1:
+            printf("\n\t posneg1 %d =%d\nEnter to continue", 
+            calculator_operand2, 
+            posneg1(calculator_operand2));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+        case 12:
             exit(0);
             break;
         default:
