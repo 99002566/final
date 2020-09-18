@@ -54,5 +54,8 @@ int greater(int operand1, int operand2);
 int primenum(int operand1);
 int primenum1(int operand2);
 int evenodd(int operand1);
+int evenodd1(int operand2);
+int posneg(int operand1);
+int posneg1(int operand2);
 
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
