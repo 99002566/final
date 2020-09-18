@@ -102,3 +102,32 @@ int posneg1(int operand2)
     else
         return -1;
 }
+
+int factorial(int operand1)
+{
+   if(operand1 < 0)
+    return -1;
+ if(operand1 == 0)
+    return 1;
+return operand1 * factorial(operand1-1);
+}
+
+int factorial1(int operand2)
+{
+   if(operand2r < 0)
+    return -1;
+ if(operand2 == 0)
+    return 1;
+return operand2 * factorial(operand2-1);
+}
+
+int squarearea(int operand1)
+{
+    return operand1*operand1;
+}
+
+int squareperi(int operand1)
+{
+    return 4*operand1;
+}
+
