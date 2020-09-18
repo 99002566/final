@@ -74,3 +74,31 @@ int evenodd(int operand1)
     else
         return 0; 
 }
+
+int evenodd1(int operand2)
+{
+    if(operand2%2==0)
+        return 1;
+    else
+        return 0; 
+}
+
+int posneg(int operand1)
+{
+    if(operand1>0)
+        return 1;
+    else if(operand1<0)
+        return 0;
+    else
+        return -1;
+}
+
+int posneg1(int operand2)
+{
+    if(operand2>0)
+        return 1;
+    else if(operand2<0)
+        return 0;
+    else
+        return -1;
+}
