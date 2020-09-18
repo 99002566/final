@@ -14,6 +14,9 @@ void test_greater(void);
 void test_primenum(void);
 void test_primenum1(void);
 void test_evenodd(void);
+void test_evenodd1(void);
+void test_posneg(void);
+void test_posneg1(void);
 
 /* Start of the application test */
 int main() {
@@ -34,7 +37,9 @@ int main() {
   CU_add_test(suite, "primenum", test_primenum);
   CU_add_test(suite, "primenum1", test_primenum1);
   CU_add_test(suite, "evenodd", test_evenodd);
-
+   CU_add_test(suite, "evenodd1", test_evenodd1);
+   CU_add_test(suite, "posneg", test_posneg);
+  CU_add_test(suite, "posneg1", test_posneg1);
 
 
 /* Note: Do not edit START*/
@@ -109,6 +114,29 @@ void test_evenodd(void)
   /* Dummy fail*/
   CU_ASSERT(1 == evenodd(5));
 }
+
+void test_evenodd1(void)
+{
+   CU_ASSERT(1 == evenodd1(6));
   
+  /* Dummy fail*/
+  CU_ASSERT(1 == evenodd1(5));
+}
+  
+void test_posneg(void)
+{
+   CU_ASSERT(1 == posneg(6));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == posneg(-5));
+}
+
+void test_posneg1(void)
+{
+   CU_ASSERT(1 == posneg1(6));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == posneg1(-5));
+}
 
 
