@@ -239,7 +239,7 @@ int kilotocentimeter(int operand1)
 int kilotomillimeter(int operand1)
 {
     int millimeter = operand1*1000000;
-    return milliimeter;
+    return millimeter;
 }
 
 
