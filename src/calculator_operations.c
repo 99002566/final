@@ -201,8 +201,8 @@ int gcd(int operand1, int operand2)
     int count,gcd;
     for(count=1;count<=operand1 && count<=operand2;++count)
     {
-        if(operand1%i==0 && operand2%i==0)
-            gcd = count
+        if(operand1%count==0 && operand2%count==0)
+            gcd = count;
     }
     return gcd;
 }
