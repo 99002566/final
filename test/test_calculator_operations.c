@@ -11,6 +11,7 @@ void test_subtract(void);
 void test_multiply(void);
 void test_divide(void);
 void test_greater(void);
+void test_smaller(void);
 void test_primenum(void);
 void test_primenum1(void);
 void test_evenodd(void);
@@ -124,7 +125,13 @@ void test_greater(void) {
   CU_ASSERT(20 == greater(10, 20));
   
   /* Dummy fail*/
-  CU_ASSERT(30 == divide(30, 40));
+  CU_ASSERT(30 == greater(30, 40));
+}
+void test_smaller(void) {
+  CU_ASSERT(10 == smaller(10, 20));
+  
+  /* Dummy fail*/
+  CU_ASSERT(40 == smaller(30, 40));
 }
 
 void test_primenum(void)
