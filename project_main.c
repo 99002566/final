@@ -298,7 +298,7 @@ void calculator_menu(void)
             getchar();
             break;
             
-        case 30:
+        case 3:
             exit(0);
             break;
         default:
