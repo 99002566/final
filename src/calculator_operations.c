@@ -31,6 +31,14 @@ int greater(int operand1, int operand2)
         return operand2;
 }
 
+int smaller(int operand1, int operand2)
+{
+    if(operand1<operand2)
+        return operand1;
+    else
+        return operand2;
+}
+
 int primenum(int operand1)
 {
     int i,m=0,flag=0;    
@@ -241,6 +249,7 @@ int kilotomillimeter(int operand1)
     int millimeter = operand1*1000000;
     return millimeter;
 }
+
 
 
     
