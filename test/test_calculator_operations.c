@@ -26,7 +26,7 @@ void test_square1(void);
 void test_cube(void);
 void test_cube1(void);
 void test_reverse(void);
-void test_revers1(void);
+void test_reverse1(void);
 void test_palindrome(void);
 void test_palindrome1(void);
 
