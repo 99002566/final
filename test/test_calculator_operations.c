@@ -53,6 +53,7 @@ int main() {
   CU_add_test(suite, "multiply", test_multiply);
   CU_add_test(suite, "divide", test_divide);
   CU_add_test(suite, "greater", test_greater);
+  CU_add_test(suite, "smaller", test_smaller);
   CU_add_test(suite, "primenum", test_primenum);
   CU_add_test(suite, "primenum1", test_primenum1);
   CU_add_test(suite, "evenodd", test_evenodd);
