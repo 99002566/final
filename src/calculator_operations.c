@@ -148,4 +148,14 @@ int cube1(int operand2)
     return operand2*operand2*operand2;
 }
 
+int reverse(int operand1)
+{
+    int rev=0,remainder;
+    while(operand1!=0){
+        remainder = operand1%10;
+        rev = rev*10+remainder;
+        operand1 /= 10;
+    }
+    return rev;
+}
 
