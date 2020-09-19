@@ -206,5 +206,19 @@ int gcd(int operand1, int operand2)
     }
     return gcd;
 }
+int lcm(int operand1, int operand2)
+{
+    int maximum;
+    maximum=(operand1>operand2)?operand1:operand2;
+    while(1)
+    {
+        if(maximum%operand1==0 && maximum%operand2==0)
+        {
+            return maximum;
+            break;
+        }
+        ++maximum;
+    }
+}
     
 
