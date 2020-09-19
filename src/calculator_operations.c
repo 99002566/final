@@ -233,12 +233,12 @@ int kilometertometer(int operand1)
 }
 int kilotocentimeter(int operand1)
 {
-    int centimeter = kilometer*100000;
+    int centimeter = operand1*100000;
     return centimeter;
 }
 int kilotomillimeter(int operand1)
 {
-    int millimeter = kilometer*1000000;
+    int millimeter = operand1*1000000;
     return milliimeter;
 }
 
