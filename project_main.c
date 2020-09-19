@@ -12,7 +12,7 @@ int calculator_operand1 = 0;
 int calculator_operand2 = 0;
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, GREATER, PRIMENUM, PRIMENUM1, EVENODD, EVENODD1, POSNEG, POSNEG1,FACTORIAL, FACTORIAL1, SQUAREAREA, SQUAREPERI, SQUARE, SQUARE1,CUBE, CUBE1, REVERSE, REVERSE1, PALINDROME, PALINDROME1,GCD, LCM, MODULUS, KILOMETERTOMETER, KILOTOCENTIMETER, KILOTOMILLIMETER, EXIT };
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, GREATER, PRIMENUM, PRIMENUM1, EVENODD, EVENODD1, POSNEG, POSNEG1,FACTORIAL, FACTORIAL1, SQUAREAREA, SQUAREPERI, SQUARE, SQUARE1,CUBE, CUBE1, REVERSE, REVERSE1, PALINDROME, PALINDROME1,GCD, LCM, MODULUS, KILOMETERTOMETER, KILOTOCENTIMETER, KILOTOMILLIMETER,SMALLER, EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 void calculator_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Greater\n6. Primenum\n7. Primenum1\n8. Evenodd\n9. Evenodd\n10. Posneg\n11. Posneg1\n12. Factorial\n13. Factorial1\n14. Squarearea\n15. Squareperi\n16. Square\n17. Square1\n18. Cube\n19. Cube1\n20. Reverse\n21. Reverse1\n22. Palindrome\n23. Palindrome1\n24. gcd\n25. Lcm\n26. Modulus\n27. Kilometertometer\n28. kilotocentimeter\n29. kilotomillimeter\n30.  Exit");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Greater\n6. Primenum\n7. Primenum1\n8. Evenodd\n9. Evenodd\n10. Posneg\n11. Posneg1\n12. Factorial\n13. Factorial1\n14. Squarearea\n15. Squareperi\n16. Square\n17. Square1\n18. Cube\n19. Cube1\n20. Reverse\n21. Reverse1\n22. Palindrome\n23. Palindrome1\n24. gcd\n25. Lcm\n26. Modulus\n27. Kilometertometer\n28. kilotocentimeter\n29. kilotomillimeter\n30. Smaller\n31.  Exit");
     printf("\n\tEnter your choice\n");
    
      __fpurge(stdin);
@@ -79,7 +79,7 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-        case MULTIPY:
+        case MULTIPLY:
             printf("\n\t%d * %d = %d\nEnter to continue", 
             calculator_operand1, 
             calculator_operand2,
@@ -297,8 +297,16 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
+             case SMALLER:
+            printf("\n\t SMALLER %d and %d = %d\nEnter to continue", 
+            calculator_operand1, 
+            calculator_operand2,
+            smaller(calculator_operand1, calculator_operand2));
             
-        case 3:
+            __fpurge(stdin);
+            getchar();
+            break;
+        case 31:
             exit(0);
             break;
         default:
