@@ -31,6 +31,7 @@ void test_palindrome(void);
 void test_palindrome1(void);
 void test_gcd(void);
 void test_lcm(void);
+void test_modulus(void);
 
 /* Start of the application test */
 int main() {
@@ -68,6 +69,7 @@ int main() {
   CU_add_test(suite, "palindrome1", test_palindrome1);
    CU_add_test(suite, "gcd", test_gcd);
   CU_add_test(suite, "lcm", test_lcm);
+  CU_add_test(suite, "modulus", test_modulus);
 
 
 
@@ -267,6 +269,13 @@ void test_lcm(void)
   
   /* Dummy fail*/
   CU_ASSERT(11 == lcm(2,6));
+}
+void test_modulus(void)
+{
+   CU_ASSERT(1 == modulus(5,2));
+  
+  /* Dummy fail*/
+  CU_ASSERT(11 == lcm(5,2));
 }
 
 
