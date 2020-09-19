@@ -79,7 +79,7 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-        case MULTIPLY:
+        case MULTIPY:
             printf("\n\t%d * %d = %d\nEnter to continue", 
             calculator_operand1, 
             calculator_operand2,
