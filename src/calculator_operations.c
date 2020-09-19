@@ -226,6 +226,22 @@ int modulus(int operand1,int operand2)
     remainder= operand1%operand2;
     return remainder;
 }
+int kilometertometer(int operand1)
+{
+    int meter=operand1*1000;
+    return meter;
+}
+int kilotocentimeter(int operand1)
+{
+    int centimeter = kilometer*100000;
+    return centimeter;
+}
+int kilotomillimeter(int operand1)
+{
+    int millimeter = kilometer*1000000;
+    return milliimeter;
+}
+
 
     
     
