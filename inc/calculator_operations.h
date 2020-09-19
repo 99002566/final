@@ -65,5 +65,9 @@ int square(int operand1);
 int square1(int operand2);
 int cube(int operand1);
 int cube1(int operand2);
+int reverse(int operand1);
+int reverse1(int operand2);
+int palindrome(int operand1);
+int palindrome1(int operand2);
 
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
