@@ -220,5 +220,13 @@ int lcm(int operand1, int operand2)
         ++maximum;
     }
 }
+int modulus(int operand1,int operand2)
+{
+    int remainder;
+    remainder= operand1%operand2;
+    return remainder;
+}
+
+    
     
 
