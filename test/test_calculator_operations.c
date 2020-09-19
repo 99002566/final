@@ -25,6 +25,10 @@ void test_square(void);
 void test_square1(void);
 void test_cube(void);
 void test_cube1(void);
+void test_reverse(void);
+void test_revers1(void);
+void test_palindrome(void);
+void test_palindrome1(void);
 
 /* Start of the application test */
 int main() {
@@ -56,6 +60,10 @@ int main() {
    CU_add_test(suite, "square1", test_square1);
    CU_add_test(suite, "cube", test_cube);
   CU_add_test(suite, "cube1", test_cube1);
+  CU_add_test(suite, "reverse", test_reverse);
+  CU_add_test(suite, "reverse1", test_reverse1);
+  CU_add_test(suite, "palindrome", test_palindrome);
+  CU_add_test(suite, "palindrome1", test_palindrome1);
 
 
 
@@ -213,6 +221,34 @@ void test_cube1(void)
   
   /* Dummy fail*/
   CU_ASSERT(11 == cube1(5));
+}
+void test_reverse(void)
+{
+   CU_ASSERT(432 == reverse(234));
+  
+  /* Dummy fail*/
+  CU_ASSERT(234 == reverse(234));
+}
+void test_reverse1(void)
+{
+   CU_ASSERT(432 == reverse1(234));
+  
+  /* Dummy fail*/
+  CU_ASSERT(234 == reverse1(234));
+}
+void test_palindrome(void)
+{
+   CU_ASSERT(1 == palindrome(1001));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == palindrome(2345));
+}
+void test_palindrome1(void)
+{
+   CU_ASSERT(1 == palindrome1(1001));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == palindrome1(2345));
 }
 
 
