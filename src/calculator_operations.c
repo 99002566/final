@@ -158,4 +158,43 @@ int reverse(int operand1)
     }
     return rev;
 }
+int reverse1(int operand2)
+{
+    int rev=0,remainder;
+    while(operand2!=0){
+        remainder = operand2%10;
+        rev = rev*10+remainder;
+        operand2 /= 10;
+    }
+    return rev;
+}
+int palindrome(int operand1)
+{
+    int rev=0,remainder,original;
+    original = operand1;
+    while(operand1!=0){
+        remainder = operand1%10;
+        rev = rev*10+remainder;
+        operand1 /= 10;
+    }
+    if(original==rev)
+         return 1;
+    else
+        return 0;
+}
+int palindrome1(int operand2)
+{
+    int rev=0,remainder,original;
+    original = operand2;
+    while(operand2!=0){
+        remainder = operand2%10;
+        rev = rev*10+remainder;
+        operand2 /= 10;
+    }
+    if(original==rev)
+         return 1;
+    else
+        return 0;
+}
+    
 
