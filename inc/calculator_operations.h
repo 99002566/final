@@ -75,6 +75,6 @@ int lcm(int operand1, int operand2);
 int modulus(int operand1, int operand2);
 int kilometertometer(int operand1);
 int kilotocentimeter(int operand1);
-int kilotomillimeter(int operand2);
+int kilotomillimeter(int operand1);
 
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
